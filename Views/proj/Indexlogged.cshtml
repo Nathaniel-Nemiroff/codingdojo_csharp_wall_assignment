@@ -1,0 +1,40 @@
+@model IEnumerable<Dictionary<string, object>>
+<a href="/logout">Logout</a>
+
+<form action="/newmessage" method="post">
+	Post message<br><input type=text name="msg"><br>
+	<input type=submit>
+</form>
+
+@{
+	foreach(var i in @Model)
+	{
+		<p>
+		@{foreach(var j in (List<Dictionary<string, object>>)i["user"])
+			{
+				@j["first"]
+			}
+		}
+		- @i["created_at"]<br>
+		@i["message"]</p>
+
+			foreach(var j in (List<Dictionary<string, object>>)i["cmts"])
+			{
+				<p>
+				@{foreach(var k in (List<Dictionary<string, object>>)j["user"])
+					{
+						@k["first"]
+					}
+				}
+				- @j["created_at"]<br>
+				@j["comment"]
+				</p>
+			}
+		<form action="/newcomment" method="post">
+			<input type=hidden name="msg" value=@i["id"]>
+			Post comment<br><input type=text name="cmt"><br>
+			<input type=submit>
+		</form>
+	}
+}
+

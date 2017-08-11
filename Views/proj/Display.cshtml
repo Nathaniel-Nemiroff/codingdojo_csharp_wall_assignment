@@ -1,0 +1,13 @@
+@model IEnumerable<Dictionary<string, object>>
+
+@{
+	foreach(var i in @Model)
+	{
+		<p>
+		@{foreach(var j in i)
+		{
+			<span>@j.Value</span>
+		}}
+		</p>
+	}
+}

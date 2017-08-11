@@ -1,0 +1,31 @@
+@model IEnumerable<Dictionary<string, object>>
+<a href="login">Login</a>
+<a href="register">Register</a>
+
+@{
+	foreach(var i in @Model)
+	{
+		<p>
+		@{foreach(var j in (List<Dictionary<string, object>>)i["user"])
+			{
+				@j["first"]
+			}
+		}
+		- @i["created_at"]<br>
+		@i["message"]</p>
+
+			foreach(var j in (List<Dictionary<string, object>>)i["cmts"])
+			{
+				<p>
+				@{foreach(var k in (List<Dictionary<string, object>>)j["user"])
+					{
+						@k["first"]
+					}
+				}
+				- @j["created_at"]<br>
+				@j["comment"]
+				</p>
+			}
+	}
+}
+

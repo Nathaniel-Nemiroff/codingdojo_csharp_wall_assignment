@@ -1,0 +1,26 @@
+@model proj.User
+
+
+<form asp-controller="proj" asp-action="Register" method="post">
+	<span asp-validation-for="FirstName"></span>
+	<label asp-for="FirstName"></label>
+		<input asp-for="FirstName">
+
+	<br><span asp-validation-for="LastName"></span>
+	<label asp-for="LastName"></label>
+		<input asp-for="LastName">
+
+	<br><span asp-validation-for="Email"></span>
+	<label asp-for="Email"></label>
+		<input asp-for="Email">
+
+	<br><span asp-validation-for="Password"></span>
+	<label asp-for="Password"></label>
+		<input asp-for="Password">
+
+	<br><span asp-validation-for="PassConfirm"></span>
+	<label asp-for="PassConfirm"></label>
+		<input asp-for="PassConfirm">
+
+	<button type="submit">Create New User</button>
+</form>

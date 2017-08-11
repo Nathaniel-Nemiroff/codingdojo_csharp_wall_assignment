@@ -1,0 +1,8 @@
+/home/nate/Documents/cddj/ch8/asp/valid/bin/Debug/netcoreapp1.1/valid.deps.json
+/home/nate/Documents/cddj/ch8/asp/valid/bin/Debug/netcoreapp1.1/valid.runtimeconfig.json
+/home/nate/Documents/cddj/ch8/asp/valid/bin/Debug/netcoreapp1.1/valid.runtimeconfig.dev.json
+/home/nate/Documents/cddj/ch8/asp/valid/bin/Debug/netcoreapp1.1/valid.dll
+/home/nate/Documents/cddj/ch8/asp/valid/bin/Debug/netcoreapp1.1/valid.pdb
+/home/nate/Documents/cddj/ch8/asp/valid/obj/Debug/netcoreapp1.1/valid.AssemblyInfo.cs
+/home/nate/Documents/cddj/ch8/asp/valid/obj/Debug/netcoreapp1.1/valid.dll
+/home/nate/Documents/cddj/ch8/asp/valid/obj/Debug/netcoreapp1.1/valid.pdb
